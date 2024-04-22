@@ -9,8 +9,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header_logo-image">
-        <img class="header-logo" src="images/" alt="логотип сайта">
+      <a class="main-header_logo-image" href="#">
+        <img class="header-logo" src="images/" alt="логотип сайта" width="33" height="38">
       </a>
       <nav class="main-nav">
         <h2 class="header-name">Cat energy</h2>
@@ -42,7 +42,7 @@
       <h2 class="catalog_title">Каталог продукции</h2>
       <section class="catalog_product-cards">
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="68" height="86">
           <h3 class="product-card_name">Cat Energy PRO 500 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">500 г</p>
@@ -54,7 +54,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="84" height="100">
           <h3 class="product-card_name">Cat Energy PRO 1000 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">1000 г</p>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="68" height="78">
           <h3 class="product-card_name">Cat Energy PRO 500 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">500 г</p>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="84" height="100">
           <h3 class="product-card_name">Cat Energy PRO 1000 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">1000 г</p>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="68" height="78">
           <h3 class="product-card_name">Cat Energy sLIM 500 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">500 г</p>
@@ -102,7 +102,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="84" height="100">
           <h3 class="product-card_name">Cat Energy sLIM 1000 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">1000 г</p>
@@ -114,7 +114,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card_image" src="images/" alt="изображение товара">
+          <img class="product-card_image" src="images/" alt="изображение товара" width="72" height="84">
           <h3 class="product-card_name">Cat Energy slim 500 г</h3>
           <p class="product-description">Масса</p>
           <p class="product-description">500 г</p>
@@ -128,7 +128,7 @@
         <div class="show-more">
           <h4 class="show-more_title">Показать еще 100500 товаров</h4>
           <p class="show-more_description">На самом деле вкусов гораздо больше!</p>
-          <button class="show-more_button">показать все</button>
+          <button class="show-more_button" type="button">показать все</button>
         </div>
       </section>
 
@@ -164,15 +164,16 @@
         </div>
       </section>
 
-      <section class="present">
+      <div class="present">
         <p class="present-description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
-      </section>
+      </div>
 
       <section class="subscribe">
         <h3 class="subscribe_title">Акции и новинки</h3>
         <p class="subscribe-description">Подпишитесь на наши новости и не <br> пропустите ни одного предложения!</p>
-        <form class="subscribe-form">
-        <input class="subscribe-form" type="text" id="mail">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru">
+          <label for="mail">Ваша почта</label>
+        <input class="subscribe-form" type="text" id="mail" name="Mail">
         <button class="subscribe-button" type="button">Подписаться</button>
       </form>
       </section>
@@ -181,25 +182,38 @@
       <section class="location">
         <h3 class="location_title">приглашаем к сотрудничеству дилеров!</h3>
         <address class="location_address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="location_image" src="images/" alt="карта расположения">
+        <img class="location_image" src="images/" alt="карта расположения" width="320" height="362">
       </section>
     </main>
-    <footer class="main-footer">
+
+    <footer class="footer">
       <h2 class="footer-title">Cat energy</h2>
       <ul class="footer_social-list">
         <li class="footer_social-item vkontakte">
-          <a class="footer_social-link vkontakte-link" href="#"></a>
+          <a class="footer_social-link vkontakte-link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+            <img class="vkontakte-link-img" src="images/" alt="Вконтакте" width="28" height="22">
+          </a>
         </li>
         <li class="footer_social-item youtube">
-          <a class="footer_social-link youtube-link" href="#"></a>
+          <a class="footer_social-link youtube-link" href="#">
+            <span class="visually-hidden">Ютуб</span>
+            <img class="youtube-link-img" src="images/" alt="Ютуб" width="28" height="22">
+          </a>
         </li>
         <li class="footer_social-item telegram">
-          <a class="footer_social-link telegram-link" href="#"></a>
+          <a class="footer_social-link telegram-link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+            <img class="telegram-link-img" src="images/" alt="Телеграм" width="28" height="22">
+          </a>
         </li>
       </ul>
       <div class="footer_copyright copyright">
         <a class="copyright_link" href="https://echo.htmlacademy.ru">HTML Academy</a>
-        <a class="copyright_link" href="https://echo.htmlacademy.ru"></a>
+        <a class="copyright_link" href="https://echo.htmlacademy.ru">
+          <span class="visually-hidden">Герб HTML Academy</span>
+          <img class="copyright_link-img" src="images/" alt="Герб HTML Academy" width="27" height="34">
+        </a>
       </div>
     </footer>
   </body>
