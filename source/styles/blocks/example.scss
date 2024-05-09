@@ -1,0 +1,39 @@
+.example__title{
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.example__description{
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $base-color-text;
+}
+
+.stats__number{
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.stats__description{
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.example__count{
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+}
