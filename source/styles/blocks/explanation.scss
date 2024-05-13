@@ -1,0 +1,58 @@
+.explanation__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+.explanation__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $base-color-text;
+  position: relative;
+  left: 90px;
+}
+
+.leaf::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#leaf");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+  top: -3px;
+}
+
+.powder::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#powder");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+  top: -3px;
+}
+
+.fork::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#fork");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+  top: -3px;
+}
+
+.clock::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#clock");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+  top: -3px;
+}
