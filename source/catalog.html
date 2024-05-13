@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Cat energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.scss">
     <script src="scripts/index.js" defer></script>
     <link rel="icon" href="favicons/32.png">
   </head>
@@ -41,21 +41,21 @@
 
 
     <main class="catalog-container">
-      <h1 class="catalog-container__title">Каталог продукции</h2>
+      <h1 class="catalog-container__title">Каталог продукции</h1>
       <section class="catalog_product-cards">
         <ul class="card-list">
           <li class="card-list__item item-card">
-           <picture>
+            <picture>
               <source type="image/png" media="(min-width: 245px)" srcset="images/catalog-1-desktop@1x.png 1x, images/catalog-1-desktop@2x.png 2x" width="161" height="172">
               <source type="image/png" media="(min-width: 324px)" srcset="images/catalog-chicken-500-tablet@1x.png 1x, images/catalog-chicken-500-tablet@2x.png 2x" width="161" height="172">
               <img class="item-card__image" src="images/catalog-chicken-500@1x.png" srcset="images/catalog-chicken-500@2x.png 2x" alt="Cat Energy PRO 500 г" width="68" height="86">
-           </picture>
+            </picture>
             <h2 class="product-card_name">Cat Energy PRO 500 г</h2>
             <div class="item-card__index index-card">
-             <span class="index-card__title">Масса</span>
-             <span class="index-card__data">500 г</span>
-           </div>
-           <div class="item-card__index index-card">
+              <span class="index-card__title">Масса</span>
+              <span class="index-card__data">500 г</span>
+            </div>
+            <div class="item-card__index index-card">
               <span class="index-card__title">Вкус</span>
               <span class="index-card__data">Курица</span>
             </div>
@@ -70,7 +70,7 @@
             <picture>
               <source type="image/png" media="(min-width: 245px)" srcset="images/catalog-2-desktop@1x.png 1x, images/catalog-2-desktop@2x.png 2x" width="168" height="206">
               <source type="image/png" media="(min-width: 324px)" srcset="images/catalog-chicken-1000-tablet@1x.png 1x, images/catalog-chicken-1000-tablet@2x.png 2x" width="168" height="206">
-             <img class="item-card__image" src="images/catalog-chicken-1000@1x.png" srcset="images/catalog-chicken-1000@2x.png 2x" alt="изображение товара" width="84" height="100">
+              <img class="item-card__image" src="images/catalog-chicken-1000@1x.png" srcset="images/catalog-chicken-1000@2x.png 2x" alt="изображение товара" width="84" height="100">
             </picture>
             <h2 class="product-card_name">Cat Energy PRO 1000 г</h2>
             <div class="item-card__index index-card">
@@ -207,43 +207,43 @@
       </section>
 
 
-      <section class="catalog-options">
+      <section class="catalog-options options">
         <h2 class="catalog-options__title">Дополнительные товары</h2>
-        <ul class="option__list">
-          <li class="option-list__item">
-            <h3 class="option-list__title">Сахарозаменитель</h3>
-            <div class="option-list__add add-card">
-              <span class="option-list__amount">1 упаковка (100 г)</span>
-              <span class="option-list__price">200 ₽</span>
+        <ul class="options-list">
+          <li class="options-list__item">
+            <h3 class="options-list__title">Сахарозаменитель</h3>
+            <div class="options-list__add add-card">
+              <span class="options-list__amount">1 упаковка (100 г)</span>
+              <span class="options-list__price">200 ₽</span>
             </div>
-            <button class="option-list__button button button--order" type="button">заказать</button>
+            <button class="options-list__button button button--order" type="button">заказать</button>
           </li>
 
-          <li class="option-list__item">
-            <h3 class="option-list__title">питьевая вода</h3>
-            <div class="option-list__add add-card">
-              <span class="option-list__amount">5 литров</span>
-              <span class="option-list__price">50 ₽</span>
+          <li class="options-list__item">
+            <h3 class="options-list__title">питьевая вода</h3>
+            <div class="options-list__add add-card">
+              <span class="options-list__amount">5 литров</span>
+              <span class="options-list__price">50 ₽</span>
             </div>
-            <button class="option-list__button button button--order" type="button">заказать</button>
+            <button class="options-list__button button button--order" type="button">заказать</button>
           </li>
 
-          <li class="option-list__item">
-            <h3 class="option-list__title">молоко</h3>
-            <div class="option-list__add add-card">
-              <span class="option-list__amount">1 литр</span>
-              <span class="option-list__price">100 ₽</span>
+          <li class="options-list__item">
+            <h3 class="options-list__title">молоко</h3>
+            <div class="options-list__add add-card">
+              <span class="options-list__amount">1 литр</span>
+              <span class="options-list__price">100 ₽</span>
             </div>
-            <button class="option-list__button button button--order" type="button">заказать</button>
+            <button class="options-list__button button button--order" type="button">заказать</button>
           </li>
 
-          <li class="option-list__item">
-            <h3 class="option-list__title">витамины</h3>
-            <div class="option-list__add add-card">
-              <span class="option-list__amount">1 упаковка (30 г)</span>
-              <span class="option-list__price">300 ₽</span>
+          <li class="options-list__item">
+            <h3 class="options-list__title">витамины</h3>
+            <div class="options-list__add add-card">
+              <span class="options-list__amount">1 упаковка (30 г)</span>
+              <span class="options-list__price">300 ₽</span>
             </div>
-            <button class="option-list__button button button--order" type="button">заказать</button>
+            <button class="options-list__button button button--order" type="button">заказать</button>
           </li>
         </ul>
       </section>

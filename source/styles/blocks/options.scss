@@ -1,10 +1,10 @@
-.options{
+.main-container__options {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #000000;
 }
 
-.options__title{
+.options__title {
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -12,14 +12,14 @@
   color: #000000;
 }
 
-.options__description{
+.options__description {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
 }
 
-.options__link{
+.options__link {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
