@@ -17,42 +17,27 @@
   left: 90px;
 }
 
-.leaf::before {
+.explanation__description::before{
   content: "";
-  background-image: url("../../icons/stack.svg#leaf");
   width: 60px;
   height: 60px;
   position: absolute;
   left: -80px;
   top: -3px;
+}
+
+.leaf::before {
+  background-image: url("../../icons/stack.svg#leaf");
 }
 
 .powder::before {
-  content: "";
   background-image: url("../../icons/stack.svg#powder");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
 }
 
 .fork::before {
-  content: "";
   background-image: url("../../icons/stack.svg#fork");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
 }
 
 .clock::before {
-  content: "";
   background-image: url("../../icons/stack.svg#clock");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
 }

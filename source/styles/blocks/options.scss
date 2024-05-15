@@ -15,26 +15,24 @@
   left: 80px;
 }
 
-.options__title-weight-loss::before {
+.options__title::before {
   content: "";
-  background-image: url("../../icons/stack.svg#cat-back-sit");
   background-repeat: no-repeat;
-  width: 50px;
-  height: 53px;
   position: absolute;
   top: -7px;
   left: -70px;
 }
 
+.options__title-weight-loss::before {
+  background-image: url("../../icons/stack.svg#cat-back-sit");
+  width: 50px;
+  height: 53px;
+}
+
 .options__title-weight-gain::before {
-  content: "";
   background-image: url("../../icons/stack.svg#cat-back-go");
-  background-repeat: no-repeat;
   width: 67px;
   height: 50px;
-  position: absolute;
-  left: -80px;
-  top: -5px;
 }
 
 .options__description {
