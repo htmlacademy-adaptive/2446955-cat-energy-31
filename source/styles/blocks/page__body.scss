@@ -2,9 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-}
 
-.page__body {
   @media (min-width: $mobile-width) {
     padding: 0;
   }

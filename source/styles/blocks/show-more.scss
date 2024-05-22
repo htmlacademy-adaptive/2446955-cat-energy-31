@@ -1,30 +1,30 @@
 .show-more {
   box-sizing: border-box;
   text-align: center;
-}
 
-.show-more {
   @media (min-width: $mobile-width) {
     width: 320px;
     padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
   }
+
   @media (min-width: $tablet-width) {
     width: 324px;
     margin: 0;
     margin-top: 81px;
-    border: 2px solid #EBEBEB;
-    padding: 0 37px 40px 37px;
+    border: 2px solid #ebebeb;
+    padding: 0 37px 40px;
   }
+
   @media (min-width: $desktop-width) {
     width: 245px;
   }
 }
 
 .show-more__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -33,16 +33,15 @@
   text-transform: uppercase;
   position: relative;
   margin: 0;
-}
 
-.show-more__title {
   @media (min-width: $mobile-width) {
     margin-top: 78px;
     margin-bottom: 8px;
   }
+
   @media (min-width: $tablet-width) {
     width: 135px;
-    margin: 160px auto 23px auto;
+    margin: 160px auto 23px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -52,15 +51,14 @@
   content: "";
   background-image: url("../../icons/stack.svg#plus");
   position: absolute;
-}
 
-.show-more__title::before {
   @media (min-width: $mobile-width) {
     width: 30px;
     height: 30px;
     left: 125px;
     top: -50px;
   }
+
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
@@ -70,46 +68,45 @@
 }
 
 .show-more__description {
-  font-family: "Lato", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   text-align: center;
   color: $base-color-text;
   margin: 0;
-}
 
-.show-more__description {
   @media (min-width: $mobile-width) {
     margin-bottom: 21px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
     width: 170px;
-    margin: 0 auto 82px auto;
+    margin: 0 auto 82px;
   }
 }
 
 .show-more__button {
   background-color: #f2f2f2;
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
-}
 
-.show-more__button {
   @media (min-width: $mobile-width) {
     width: 280px;
     min-height: 40px;
     margin-bottom: 24px;
   }
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }
+
   @media (min-width: $desktop-width) {
     width: 169px;
   }

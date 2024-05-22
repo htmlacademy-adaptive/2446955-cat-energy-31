@@ -1,13 +1,14 @@
 .explanation__part {
   @media (min-width: $mobile-width) {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column wrap;
+    margin-left: 40px;
   }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     min-height: 280px;
@@ -21,18 +22,18 @@
   font-weight: 400;
   color: #000000;
   text-align: center;
-}
 
-.explanation__title {
   @media (min-width: $mobile-width) {
     text-align: left;
   }
+
   @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 32px;
   }
@@ -45,9 +46,7 @@
   font-weight: 400;
   color: $base-color-text;
   position: relative;
-}
 
-.explanation__description {
   @media (min-width: $mobile-width) {
     margin: 0;
     margin-bottom: 20px;
@@ -67,6 +66,7 @@
     margin-bottom: 37px;
     left: 0;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     font-size: 16px;
@@ -81,9 +81,7 @@
   position: absolute;
   left: -80px;
   top: -3px;
-}
 
-.explanation__description::before {
   @media (min-width: $tablet-width) {
     display: block;
     width: 80px;
@@ -96,7 +94,7 @@
 .leaf::after {
   @media (min-width: $tablet-width) {
     content: "1";
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     line-height: 280px;
@@ -117,6 +115,7 @@
     width: 230px;
     margin-right: 153px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 94px;
@@ -126,7 +125,7 @@
 .powder::after {
   @media (min-width: $tablet-width) {
     content: "2";
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     line-height: 280px;
@@ -146,6 +145,7 @@
   @media (min-width: $tablet-width) {
     width: 246px;
   }
+
   @media (min-width: $desktop-width) {
     width: 244px;
     margin-right: 79px;
@@ -156,11 +156,10 @@
   @media (min-width: $tablet-width) {
     content: "3";
     width: 136px;
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     line-height: 280px;
-    width: 112px;
     z-index: -1;
     position: absolute;
     top: 0;
@@ -177,6 +176,7 @@
     width: 247px;
     margin-right: 137px;
   }
+
   @media (min-width: $desktop-width) {
     width: 245px;
     margin: 0;
@@ -187,7 +187,7 @@
 .clock::after {
   @media (min-width: $tablet-width) {
     content: "4";
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     line-height: 280px;
@@ -207,6 +207,7 @@
   @media (min-width: $tablet-width) {
     width: 249px;
   }
+
   @media (min-width: $desktop-width) {
     width: 246px;
   }

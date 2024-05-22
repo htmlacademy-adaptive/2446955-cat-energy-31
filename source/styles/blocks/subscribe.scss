@@ -1,19 +1,19 @@
 .subscribe {
   box-sizing: border-box;
   position: relative;
-}
 
-.subscribe {
   @media (min-width: $mobile-width) {
     width: 320px;
     padding: 0 20px;
     margin-bottom: 40px;
   }
+
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
     margin-bottom: 80px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
@@ -22,25 +22,25 @@
 }
 
 .subscribe__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
   margin: 0;
-}
 
-.subscribe__title {
   @media (min-width: $mobile-width) {
-  text-align: left;
-  margin-bottom: 32px;
+    text-align: left;
+    margin-bottom: 32px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
     margin-left: 40px;
     margin-bottom: 66px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
@@ -51,17 +51,16 @@
 
 .subscribe__title::before {
   content: "";
-  background-color: #68B738;
+  background-color: #68b738;
   height: 2px;
   position: absolute;
-}
 
-.subscribe__title::before {
   @media (min-width: $tablet-width) {
     width: 30px;
     left: 0;
     top: 5%;
   }
+
   @media (min-width: $desktop-width) {
     width: 70px;
   }
@@ -69,39 +68,38 @@
 
 .subscribe__title::after {
   content: "";
-  background-color: #68B738;
+  background-color: #68b738;
   height: 2px;
   position: absolute;
-}
 
-.subscribe__title::after {
   @media (min-width: $mobile-width) {
     width: 108px;
     top: 5%;
     right: 0;
   }
+
   @media (min-width: $tablet-width) {
     width: 456px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1053px;
   }
 }
 
 .subscribe__description {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
   color: #000000;
   margin: 0;
-}
 
-.subscribe__description {
   @media (min-width: $mobile-width) {
     margin-bottom: 24px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
@@ -109,6 +107,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     text-align: center;
@@ -116,15 +115,13 @@
 }
 
 .subscribe-form {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   box-sizing: border-box;
   padding: 0;
-}
 
-.subscribe-form {
   @media (min-width: $tablet-width) {
     width: 632px;
     height: 56px;
@@ -132,6 +129,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @media (min-width: $desktop-width) {
     width: 752px;
   }
@@ -144,12 +142,14 @@
     margin: 0;
     margin-bottom: 16px;
     padding: 0;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     box-sizing: border-box;
   }
+
   @media (min-width: $tablet-width) {
     width: 376px;
   }
+
   @media (min-width: $desktop-width) {
     width: 496px;
   }
@@ -160,6 +160,7 @@
     width: 280px;
     height: 56px;
   }
+
   @media (min-width: $tablet-width) {
     width: 256px;
   }

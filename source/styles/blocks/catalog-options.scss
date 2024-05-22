@@ -1,16 +1,16 @@
 .catalog-option {
   box-sizing: border-box;
-}
 
-.catalog-option {
   @media (min-width: $mobile-width) {
-  width: 320px;
-  padding: 0 20px;
+    width: 320px;
+    padding: 0 20px;
   }
+
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
@@ -18,27 +18,27 @@
 }
 
 .catalog-option__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
   color: #000000;
   position: relative;
-}
 
-.catalog-option__title {
   @media (min-width: $mobile-width) {
     text-align: left;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
     padding-bottom: 36px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
     margin-left: 40px;
     border: none;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
@@ -47,25 +47,18 @@
   }
 }
 
-.catalog-option__title::after {
-  content: "";
-  background-color: #68B738;
-  height: 2px;
-}
-
 .catalog-option__title::before {
   content: "";
-  background-color: #68B738;
+  background-color: #68b738;
   height: 2px;
-}
 
-.catalog-option__title::before {
   @media (min-width: $tablet-width) {
     width: 30px;
     position: absolute;
     top: 20%;
     left: -70px;
   }
+
   @media (min-width: $desktop-width) {
     width: 70px;
     left: -110px;
@@ -73,18 +66,24 @@
 }
 
 .catalog-option__title::after {
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+
   @media (min-width: $mobile-width) {
     width: 34px;
     position: absolute;
     top: 50%;
     right: -20px;
   }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 357px;
     right: -30px;
     top: 20%;
   }
+
   @media (min-width: $desktop-width) {
     width: 914px;
     right: -110px;
@@ -92,24 +91,24 @@
 }
 
 .option-list__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
-}
 
-.option-list__title {
   @media (min-width: $mobile-width) {
     margin: 0;
     margin-bottom: 13px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin: 0;
   }
+
   @media (min-width: $desktop-width) {
     width: 165px;
   }
@@ -119,15 +118,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.option-list {
   @media (min-width: $mobile-width) {
     margin-bottom: 35px;
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 96px;
   }
@@ -137,22 +136,24 @@
   @media (min-width: $mobile-width) {
     display: grid;
     grid-template-rows: repeat (3, auto);
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
     padding-bottom: 19px;
     padding-top: 12px;
   }
+
   @media (min-width: $tablet-width) {
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     padding: 27px 39px;
   }
+
   @media (min-width: $desktop-width) {
     width: 896px;
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
     border: none;
-    border-bottom: 1px solid #CDCDCD;
-    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
@@ -162,6 +163,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   @media (min-width: $desktop-width) {
     width: 244px;
     height: 40px;
@@ -171,7 +173,7 @@
 }
 
 .add-card {
-  font-family: "Lato", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -179,12 +181,11 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
-}
 
-.add-card {
   @media (min-width: $tablet-width) {
     width: 225px;
   }
+
   @media (min-width: $desktop-width) {
     width: 285px;
   }
@@ -196,9 +197,11 @@
     justify-content: space-between;
     margin-bottom: 25px;
   }
+
   @media (min-width: $desktop-width) {
     width: 652px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     align-items: center;
@@ -206,14 +209,14 @@
   }
 }
 
-.option-list__price, .option-list__amount {
+.option-list__price,
+.option-list__amount {
   margin: 0;
-}
 
-.option-list__price, .option-list__amount {
   @media (min-width: $mobile-width) {
     margin-bottom: 15px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;

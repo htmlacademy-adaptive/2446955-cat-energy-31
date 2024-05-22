@@ -1,17 +1,16 @@
 .location__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-}
 
-.location__title {
   @media (min-width: $mobile-width) {
     width: 140px;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
@@ -20,17 +19,16 @@
 }
 
 .location__address {
-  font-family: "Lato", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   font-style: normal;
-}
 
-.location__address {
   @media (min-width: $mobile-width) {
     width: 140px;
   }
+
   @media (min-width: $tablet-width) {
     width: 157px;
     font-size: 16px;
@@ -46,6 +44,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   @media (min-width: $tablet-width) {
     width: 628;
     padding: 0 30px;
@@ -53,10 +52,11 @@
     justify-content: space-between;
     margin-left: 40px;
   }
+
   @media (min-width: $desktop-width) {
     width: 565px;
     position: absolute;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 60px 80px;
     box-sizing: border-box;
     margin: 0;
@@ -73,25 +73,22 @@
 
 .location-city {
   margin: 0;
-}
 
-.location-city {
   @media (min-width: $tablet-width) {
     margin-top: 16px;
-  padding: 0;
+    padding: 0;
   }
-}
-
-.location-building {
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-location {
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $mobile-width) {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
+
   @media (min-width: $tablet-width) {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 }
