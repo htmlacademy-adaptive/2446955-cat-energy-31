@@ -1,8 +1,142 @@
-.copyright__link {
+.footer {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+}
+
+.footer {
+  @media (min-width: $mobile-width) {
+    padding: 40px 20px;
+    min-width: 320px;
+  }
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 66px 110px;
+  }
+}
+
+.footer-logo {
+  @media (min-width: $mobile-width) {
+    display: block;
+    width: 128px;
+    height: 24px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer-logo::after {
+  @media (min-width: $mobile-width) {
+    content: "";
+    background-color: #d9d9d9;
+    width: 280px;
+    height: 1px;
+    margin: 20px;
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__social::after {
+  @media (min-width: $mobile-width) {
+    content: "";
+    background-color: #d9d9d9;
+    width: 280px;
+    height: 1px;
+    margin: 20px;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 132px;
+  height: 22px;
+}
+
+.social-list {
+  @media (min-width: $mobile-width) {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.social-link::before {
+  content: "";
+  width: 28px;
+  height: 22px;
+  display: block;
+  position: static;
+}
+
+.vkontakte-link::before {
+  background-image: url("../../icons/stack.svg#vkontakte");
+  left: 94px;
+}
+
+.youtube-link::before {
+  background-image: url("../../icons/stack.svg#youtube");
+  left: 146px;
+}
+
+.telegram-link::before {
+  background-image: url("../../icons/stack.svg#telegram");
+  left: 198px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+.copyright-link {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
   color: $base-color-text;
+}
+
+.copyright-link__html::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#html-logo");
+  width: 27px;
+  height: 34px;
+  display: block;
+  position: static;
 }

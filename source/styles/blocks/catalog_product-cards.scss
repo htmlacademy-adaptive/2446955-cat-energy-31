@@ -1,0 +1,44 @@
+.catalog_product-cards {
+  box-sizing: border-box;
+}
+
+.catalog_product-cards {
+  @media (min-width: $mobile-width) {
+    width: 100%;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 71px;
+  }
+}
+
+.card-list {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
+  }
+}
+
+.catalog-container__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+}

@@ -1,3 +1,19 @@
+.explanation__part {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    min-height: 280px;
+  }
+}
+
 .explanation__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -7,6 +23,21 @@
   text-align: center;
 }
 
+.explanation__title {
+  @media (min-width: $mobile-width) {
+    text-align: left;
+  }
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .explanation__description {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -14,10 +45,36 @@
   font-weight: 400;
   color: $base-color-text;
   position: relative;
-  left: 90px;
 }
 
-.explanation__description::before{
+.explanation__description {
+  @media (min-width: $mobile-width) {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 200px;
+    min-height: 54px;
+    left: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    padding-top: 151px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 37px;
+    left: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.explanation__description::before {
   content: "";
   width: 60px;
   height: 60px;
@@ -26,18 +83,150 @@
   top: -3px;
 }
 
+.explanation__description::before {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 40px;
+  }
+}
+
+.leaf::after {
+  @media (min-width: $tablet-width) {
+    content: "1";
+    color: #F2F2F2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .leaf::before {
   background-image: url("../../icons/stack.svg#leaf");
+}
+
+.leaf {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 153px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 94px;
+  }
+}
+
+.powder::after {
+  @media (min-width: $tablet-width) {
+    content: "2";
+    color: #F2F2F2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
 }
 
 .powder::before {
   background-image: url("../../icons/stack.svg#powder");
 }
 
+.powder {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-right: 79px;
+  }
+}
+
+.fork::after {
+  @media (min-width: $tablet-width) {
+    content: "3";
+    width: 136px;
+    color: #F2F2F2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .fork::before {
   background-image: url("../../icons/stack.svg#fork");
 }
 
+.fork {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-right: 137px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+    margin-right: 77px;
+  }
+}
+
+.clock::after {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    color: #F2F2F2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}
+
 .clock::before {
   background-image: url("../../icons/stack.svg#clock");
+}
+
+.clock {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
+}
+
+.explanation {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    box-sizing: border-box;
+    margin-bottom: 69px;
+  }
 }
