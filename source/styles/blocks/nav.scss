@@ -19,6 +19,48 @@
   }
 }
 
+.nav-opened .nav-toggle {
+  top: 0;
+  left: auto;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    height: 2px;
+    width: 24px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .nav-closed .nav-list__item {
+    display: none;
+  }
+
+  .nav-opened .nav-list__item {
+    display: none;
+  }
+}
+
+.nav-closed .nav-list__item, .nav-opened .nav-list__item {
+  @media (min-width: $tablet-width) {
+    display: revert;
+  }
+}
+
 .nav-list {
   font-family: "oswald", sans-serif;
   font-size: 18px;
@@ -51,6 +93,9 @@
     border-bottom: 1px solid #e6e6e6;
     text-align: center;
   }
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 
 }
 
@@ -69,9 +114,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 25px 30px 0;
+    margin: 12px 35px 0 10px;
     padding: 0;
     min-height: 50px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,6 +158,12 @@
   position: absolute;
   top: 0;
   right: 0;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .nav-closed .nav-toggle::before {
@@ -123,42 +175,6 @@
   top: 23px;
   right: 22px;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-}
-
-.nav-opened .nav-toggle {
-  top: 0;
-  left: auto;
-  right: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    height: 2px;
-    width: 24px;
-    background-color: #000000;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-@media (min-width: $mobile-width) {
-  .nav-closed .nav-list__item {
-    display: none;
-  }
-
-  .nav-opened .nav-list__item {
-    display: none;
-  }
 }
 
 .nav__head {

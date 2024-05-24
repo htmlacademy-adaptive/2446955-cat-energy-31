@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 628;
+    width: 628px;
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -80,6 +80,12 @@
   }
 }
 
+.location-building {
+  @media (min-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
 .catalog-location {
   margin: 0;
   padding: 0;
@@ -91,4 +97,8 @@
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
   }
+}
+
+.location__image {
+  display: block;
 }

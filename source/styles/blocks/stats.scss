@@ -4,7 +4,6 @@
   @media (min-width: $mobile-width) {
     background-color: #eaeaea;
     padding: 25px 20px 0;
-    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,6 +41,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,6 +77,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    border: 1px solid #e6e6e6;
+    padding: 15px 29px;
+    width: 162px;
+    box-sizing: border-box;
   }
 }
 
