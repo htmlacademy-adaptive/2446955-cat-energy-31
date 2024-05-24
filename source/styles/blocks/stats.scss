@@ -20,6 +20,11 @@
   }
 }
 
+.stats__image {
+  display: block;
+  object-fit: cover;
+}
+
 .stats__title {
   font-family: "oswald", sans-serif;
   font-size: 36px;
@@ -178,4 +183,20 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+}
+
+.stats__compare {
+  display: grid;
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    grid-template-columns: 140px, 140px;
+  }
+}
+
+.fat-cat {
+  object-position: left;
+}
+
+.slim-cat {
+  object-position: right;
 }
