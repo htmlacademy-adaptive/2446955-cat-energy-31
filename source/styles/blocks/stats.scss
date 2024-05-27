@@ -20,8 +20,13 @@
 }
 
 .stats__image {
-  display: block;
   object-fit: cover;
+  height: auto;
+  display: block;
+
+  @media (min-width: $mobile-width) {
+    width: 280px;
+  }
 }
 
 .stats__title {
@@ -73,14 +78,19 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  @media (min-width: $mobile-width) {
+    width: 82px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    border: 1px solid #e6e6e6;
-    padding: 15px 29px;
-    width: 162px;
+    width: 102px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #000000;
   }
 }
 
@@ -120,7 +130,7 @@
     display: flex;
     margin: 0;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $tablet-width) {
@@ -133,10 +143,28 @@
 .stats__item {
   @media (min-width: $mobile-width) {
     width: 124px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4%;
+    position: relative;
+    padding: 14px 20px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) {
     width: 162px;
+    border: 1px solid #e6e6e6;
+    padding: 15px 29px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 2%;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px 30px;
   }
 }
 
@@ -152,12 +180,28 @@
     width: 77px;
     text-align: center;
     margin: 0 auto;
+    position: absolute;
+    background-color: #eaeaea;
+    top: 43px;
+    right: 23px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     width: 125px;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 5px;
+    top: 59px;
+    right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+    position: absolute;
+
   }
 }
 
@@ -179,6 +223,15 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+  font-weight: 400;
+
+  @media (min-width: $mobile-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .price {
@@ -187,14 +240,25 @@
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .stats__compare {
-  display: grid;
+  display: flex;
   @media (min-width: $mobile-width) {
     width: 280px;
-    grid-template-columns: 140px, 140px;
+    margin: 0 auto 40px;
   }
+}
+
+.stats__compare picture {
+  flex-grow: 0;
+  overflow: hidden;
+  width: 50%;
 }
 
 .fat-cat {
@@ -203,4 +267,11 @@
 
 .slim-cat {
   object-position: right;
+}
+
+.description-weight {
+  @media (min-width: $tablet-width) {
+    width: 96px;
+    right: 28px;
+  }
 }
