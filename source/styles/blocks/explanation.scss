@@ -167,7 +167,7 @@
     z-index: -1;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -4;
   }
 }
 
@@ -184,7 +184,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     margin: 0;
-    margin-right: 77px;
+    margin-right: 81px;
   }
 }
 
@@ -221,7 +221,9 @@
   @media (min-width: $mobile-width) {
     width: 280px;
     padding: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -236,5 +238,6 @@
     padding: 0 110px;
     box-sizing: border-box;
     margin-bottom: 69px;
+    border: none;
   }
 }

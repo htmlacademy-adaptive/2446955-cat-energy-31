@@ -35,6 +35,10 @@
     line-height: 20px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .location__gteeting {
@@ -43,21 +47,23 @@
     padding: 26px 20px;
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    padding: 0 30px;
+    padding: 62px 30px;
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
     position: absolute;
     background-color: #ffffff;
-    padding: 60px 80px;
+    padding: 62px 80px;
     box-sizing: border-box;
     margin: 0;
     margin-left: 110px;
@@ -67,7 +73,7 @@
 
 .catalog-location .location__gteeting {
   @media (min-width: $tablet-width) {
-    padding: 40px 30px;
+    padding: 61px 30px;
   }
 }
 
@@ -83,6 +89,10 @@
 .location-building {
   @media (min-width: $mobile-width) {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
   }
 }
 
@@ -101,4 +111,6 @@
 
 .location__image {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -3,7 +3,7 @@
 
   @media (min-width: $mobile-width) {
     min-height: 290px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $tablet-width) {
@@ -61,11 +61,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 57px 125px 60px 77px;
+    padding: 60px 125px 60px 79px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
