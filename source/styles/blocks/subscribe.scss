@@ -1,23 +1,171 @@
+.subscribe {
+  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    margin-bottom: 104px;
+  }
+}
+
 .subscribe__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  text-align: center;
   color: #000000;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    text-align: left;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 40px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-bottom: 72px;
+  }
+}
+
+.subscribe__title::before {
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    left: 0;
+    top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
+}
+
+.subscribe__title::after {
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+  position: absolute;
+
+  @media (min-width: $mobile-width) {
+    width: 108px;
+    top: 9px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 456px;
+    top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1053px;
+  }
 }
 
 .subscribe__description {
+  font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
   color: #000000;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    text-align: center;
+  }
 }
 
 .subscribe-form {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    height: 56px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
+}
+
+.subscribe-input {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    height: 56px;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.subscribe__button {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    height: 56px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }

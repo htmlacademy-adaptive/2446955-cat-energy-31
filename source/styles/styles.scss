@@ -5,15 +5,15 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
+@import "./blocks/page__body.scss";
 @import "./blocks/button.scss";
-@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/options.scss";
 @import "./blocks/explanation.scss";
-@import "./blocks/example.scss";
+@import "./blocks/stats.scss";
 @import "./blocks/location.scss";
-@import "./blocks/site-list.scss";
-@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog_product-cards.scss";
 @import "./blocks/item-card.scss";
 @import "./blocks/index-card.scss";
 @import "./blocks/show-more.scss";

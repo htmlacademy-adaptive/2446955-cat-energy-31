@@ -1,7 +1,54 @@
-.main-container__options {
-  font-family: "Oswald", sans-serif;
+.options {
+  font-family: "oswald", sans-serif;
   font-weight: 400;
   color: #000000;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: $mobile-width) {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0 110px;
+    margin-bottom: 25px;
+  }
+}
+
+.options__weight {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    min-height: 263px;
+    margin-bottom: 20px;
+    padding: 30px 20px 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 372px;
+    padding: 77px 63px 53px 52px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    padding: 78px 61px 55px 52px;
+  }
 }
 
 .options__title {
@@ -12,36 +59,135 @@
   color: #000000;
   display: block;
   position: relative;
-  left: 80px;
+  box-sizing: border-box;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    margin-bottom: 29px;
+    width: 137px;
+    left: 70px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    width: 210px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 163px;
+    margin-bottom: 73px;
+  }
 }
 
-.options__title-weight-loss::before {
+.options__title::before {
   content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+
+  @media (min-width: $mobile-width) {
+    top: -10px;
+    left: -70px;
+  }
+}
+
+.options__title-loss::before {
   background-image: url("../../icons/stack.svg#cat-back-sit");
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 53px;
-  position: absolute;
-  top: -7px;
-  left: -70px;
+
+  @media (min-width: $mobile-width) {
+    width: 50px;
+    height: 53px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+    top: 3px;
+    left: 393px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    left: -162px;
+    top: -39px;
+  }
 }
 
-.options__title-weight-gain::before {
-  content: "";
+.options__title-gain {
+  @media (min-width: $mobile-width) {
+    top: -1px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.options__title-gain::before {
   background-image: url("../../icons/stack.svg#cat-back-go");
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 50px;
-  position: absolute;
-  left: -80px;
-  top: -5px;
+
+  @media (min-width: $mobile-width) {
+    width: 67px;
+    height: 50px;
+    left: -77px;
+    top: -7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    left: 363px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: -180px;
+    top: -31px;
+  }
 }
 
 .options__description {
-  font-family: "Lato", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    min-height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    min-height: 72px;
+    margin-bottom: 27px;
+  }
+}
+
+.options__description::after {
+  @media (min-width: $mobile-width) {
+    content: "";
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 240px;
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .options__link {
@@ -51,4 +197,37 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.options__link::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_arrow");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 15px);
+
+  @media (min-width: $tablet-width) {
+    left: calc(100% + 25px);
+  }
+}
+
+.gain {
+  @media (min-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }

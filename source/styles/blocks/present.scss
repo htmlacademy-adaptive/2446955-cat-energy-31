@@ -1,22 +1,100 @@
+.present {
+  box-sizing: border-box;
+
+  @media (min-width: $mobile-width) {
+    min-height: 290px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    width: 707px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 288px;
+  }
+}
+
+.present::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  position: absolute;
+  z-index: -1;
+
+  @media (min-width: $mobile-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/gift-mobile@1x.png");
+    width: 280px;
+    height: 290px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/gift-tablet@1x.png");
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/gift-desktop@1x.png");
+    width: 245px;
+    height: 288px;
+  }
+}
+
 .present__description {
-  font-family: "Lato", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
   vertical-align: bottom;
   color: #ffffff;
-  background-color: $bg-basic-green;
-  height: 290px;
+  box-sizing: border-box;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    padding: 59px 59px 43px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 125px 60px 79px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px;
+    display: block;
+  }
 }
 
 .present__description::before {
   content: "";
   background-image: url("../../icons/stack.svg#icon-gift");
   background-repeat: no-repeat;
-  background-color: $bg-basic-green;
   width: 78px;
   height: 80px;
   display: block;
-  margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

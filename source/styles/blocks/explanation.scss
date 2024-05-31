@@ -1,3 +1,21 @@
+.explanation__part {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    min-height: 280px;
+  }
+}
+
 .explanation__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -5,6 +23,23 @@
   font-weight: 400;
   color: #000000;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .explanation__description {
@@ -14,45 +49,195 @@
   font-weight: 400;
   color: $base-color-text;
   position: relative;
-  left: 90px;
+
+  @media (min-width: $mobile-width) {
+    margin: 0;
+    margin-bottom: 26px;
+    width: 200px;
+    min-height: 54px;
+    left: 40px;
+    top: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    padding-top: 151px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 37px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.explanation__description::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 40px;
+  }
+}
+
+.leaf::after {
+  @media (min-width: $tablet-width) {
+    content: "1";
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .leaf::before {
-  content: "";
   background-image: url("../../icons/stack.svg#leaf");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
+}
+
+.leaf {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 94px;
+  }
+}
+
+.powder::after {
+  @media (min-width: $tablet-width) {
+    content: "2";
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
 }
 
 .powder::before {
-  content: "";
   background-image: url("../../icons/stack.svg#powder");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
+}
+
+.powder {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-right: 79px;
+  }
+}
+
+.fork::after {
+  @media (min-width: $tablet-width) {
+    content: "3";
+    width: 136px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -4;
+  }
 }
 
 .fork::before {
-  content: "";
   background-image: url("../../icons/stack.svg#fork");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
+}
+
+.fork {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-right: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+    margin-right: 81px;
+  }
+}
+
+.clock::after {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    width: 112px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 22px;
+  }
 }
 
 .clock::before {
-  content: "";
   background-image: url("../../icons/stack.svg#clock");
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: -80px;
-  top: -3px;
+}
+
+.clock {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
+}
+
+.explanation {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    padding: 0 20px;
+    margin-bottom: 29px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px 11px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    box-sizing: border-box;
+    margin-bottom: 69px;
+    border: none;
+  }
 }
