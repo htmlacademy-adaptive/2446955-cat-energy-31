@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="catalog-header"><span class="visually-hidden">Шапка сайта</span>
+  <header class="catalog-header" data-test="header"><span class="visually-hidden">Шапка сайта</span>
     <nav class="catalog-header__nav nav nav-closed">
       <div class="nav__head"><a class="nav-logo" href="#">
           <picture>
@@ -30,7 +30,7 @@
     </nav>
   </header>
   <main class="catalog-container">
-    <section class="catalog_product-cards">
+    <section class="catalog_product-cards" data-test="catalog">
       <h1 class="catalog-container__title">Каталог продукции</h1>
       <ul class="card-list">
         <li class="card-list__item item-card">
@@ -187,7 +187,7 @@
         </li>
       </ul>
     </section>
-    <section class="catalog-option option">
+    <section class="catalog-option option" data-test="additional">
       <h2 class="catalog-option__title">Дополнительные товары</h2>
       <div class="option__all">
         <ul class="option-list">
@@ -240,7 +240,7 @@
           class="subscribe-input" type="text" id="mail" name="Mail"><button class="subscribe__button button"
           type="button">Подписаться</button></form>
     </section>
-    <section class="catalog-location location">
+    <section class="catalog-location location" data-test="contacts">
       <div class="location__gteeting">
         <h3 class="location__title">приглашаем<br>к сотрудничеству дилеров!</h3>
         <address class="location__address">
@@ -258,7 +258,7 @@
       </picture>
     </section>
   </main>
-  <footer class="footer"><a class="footer-logo" href="#"><img class="footer-logo__cat" src="images/cat-energy.svg"
+  <footer class="footer" data-test="footer"><a class="footer-logo" href="#"><img class="footer-logo__cat" src="images/cat-energy.svg"
         width="128" height="24" alt="надпись cat energy"><span class="visually-hidden">cat energy</span></a>
     <ul class="footer__social social-list">
       <li class="social-list__item vkontakte"><a class="social-link vkontakte-link" href="#"><span
