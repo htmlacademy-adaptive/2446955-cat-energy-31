@@ -72,6 +72,7 @@
   @media (min-width: $desktop-width) {
     padding: 56px 42px 43px;
     display: block;
+    text-align: center;
   }
 }
 
@@ -93,7 +94,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
   }
