@@ -30,14 +30,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    column-gap: 60px;
-    row-gap: 43px;
+    gap: 60px 43px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 47px 80px;
   }
 }
 
@@ -56,5 +55,10 @@
     margin: 49px 0 65px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 61px;
+    margin-bottom: 67px;
   }
 }

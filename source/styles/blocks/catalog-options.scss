@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
+    margin-bottom: 3px;
   }
 }
 
@@ -47,7 +48,7 @@
     font-size: 40px;
     line-height: 40px;
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 44px;
   }
 }
 
@@ -169,7 +170,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    width: 260px;
     height: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -211,7 +212,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 42px;
   }
 }
 
@@ -242,6 +243,10 @@
     width: 200px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .option-list__price {
@@ -249,5 +254,10 @@
     margin-left: 42px;
     text-align: right;
     width: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 80px;
   }
 }

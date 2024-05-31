@@ -40,6 +40,10 @@
     display: flex;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .item-card__image img {
@@ -71,6 +75,7 @@
     width: 169px;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 33px;
   }
 }
 
@@ -96,6 +101,10 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .item-card__index {
@@ -116,9 +125,15 @@
   }
 }
 
+.index-card:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
+}
+
 .index-card:nth-child(1),
 .index-card:nth-child(2) {
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 }
