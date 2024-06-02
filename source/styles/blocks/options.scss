@@ -205,6 +205,10 @@
   }
 }
 
+.options__link:active {
+  opacity: 30%;
+}
+
 .options__link::after {
   content: "";
   background-image: url("../../icons/stack.svg#icon_arrow");
@@ -224,10 +228,16 @@
 
 .gain {
   @media (min-width: $mobile-width) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+  }
+}
+
+.loss {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
   }
 }

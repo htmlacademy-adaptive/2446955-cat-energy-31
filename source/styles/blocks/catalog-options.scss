@@ -163,6 +163,8 @@
 }
 
 .option-list__button {
+  cursor: pointer;
+
   @media (min-width: $mobile-width) {
     width: 100%;
     padding-top: 10px;
@@ -175,6 +177,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.option-list__button:hover {
+  background-color: #5eaa2f;
+}
+
+.option-list__button:active {
+  background-color: #5eaa2f;
+  opacity: 30%;
 }
 
 .add-card {

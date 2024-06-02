@@ -54,6 +54,8 @@
 }
 
 .item-card__button {
+  cursor: pointer;
+
   @media (min-width: $mobile-width) {
     grid-column: span 2;
     width: 100%;
@@ -64,6 +66,15 @@
   @media (min-width: $tablet-width) {
     align-items: end;
   }
+}
+
+.item-card__button:hover {
+  background-color: #5eaa2f;
+}
+
+.item-card__button:active {
+  background-color: #5eaa2f;
+  opacity: 30%;
 }
 
 .item-card__description {

@@ -80,11 +80,11 @@
 
 .explanation__description::before {
   content: "";
-  width: 60px;
-  height: 60px;
   position: absolute;
   left: -80px;
   top: -2px;
+  width: 60px;
+  height: 60px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -111,7 +111,13 @@
 }
 
 .leaf::before {
-  background-image: url("../../icons/stack.svg#leaf");
+    @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#leaf-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#leaf-tablet");
+  }
 }
 
 .leaf {
@@ -142,7 +148,13 @@
 }
 
 .powder::before {
-  background-image: url("../../icons/stack.svg#powder");
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#powder-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#powder-tablet");
+  }
 }
 
 .powder {
@@ -172,7 +184,13 @@
 }
 
 .fork::before {
-  background-image: url("../../icons/stack.svg#fork");
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#fork-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#fork-tablet");
+  }
 }
 
 .fork {
@@ -204,7 +222,13 @@
 }
 
 .clock::before {
-  background-image: url("../../icons/stack.svg#clock");
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#clock-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#clock-tablet");
+  }
 }
 
 .clock {
