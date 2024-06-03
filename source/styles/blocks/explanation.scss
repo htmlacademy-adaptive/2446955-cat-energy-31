@@ -111,7 +111,7 @@
 }
 
 .leaf::before {
-    @media (min-width: $mobile-width) {
+  @media (min-width: $mobile-width) {
     background-image: url("../../icons/stack.svg#leaf-mobile");
   }
 
