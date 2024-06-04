@@ -1,4 +1,4 @@
-.catalog_product-cards {
+.catalog-container__product-cards {
   box-sizing: border-box;
 
   @media (min-width: $mobile-width) {
@@ -18,25 +18,6 @@
     width: 1440px;
     padding: 0 110px;
     margin-bottom: 71px;
-  }
-}
-
-.card-list {
-  list-style: none;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
-    gap: 60px 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 245px);
-    gap: 47px 80px;
   }
 }
 

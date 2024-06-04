@@ -53,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    padding: 62px 30px;
+    padding: 61px 30px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -63,11 +63,12 @@
     width: 565px;
     position: absolute;
     background-color: #ffffff;
-    padding: 62px 80px;
+    padding: 61px 79px 60px;
     box-sizing: border-box;
     margin: 0;
     margin-left: 110px;
     margin-top: 95px;
+    right: 53%;
   }
 }
 
@@ -81,7 +82,7 @@
   }
 }
 
-.location-city {
+.location__city {
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -90,7 +91,7 @@
   }
 }
 
-.location-building {
+.location__building {
   @media (min-width: $mobile-width) {
     margin: 0;
   }
@@ -100,7 +101,7 @@
   }
 }
 
-.catalog-location {
+.location__catalog {
   margin: 0;
   padding: 0;
 
@@ -115,6 +116,13 @@
 
 .location__image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 402px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 398px;
+  }
 }

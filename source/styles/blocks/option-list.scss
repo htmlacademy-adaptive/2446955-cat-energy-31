@@ -1,97 +1,18 @@
-.catalog-option {
-  box-sizing: border-box;
+.option-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $mobile-width) {
-    width: 320px;
-    padding: 0 20px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0 110px;
-    margin-bottom: 3px;
-  }
-}
-
-.catalog-option__title {
-  font-family: "oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: center;
-  color: #000000;
-  position: relative;
-
-  @media (min-width: $mobile-width) {
-    text-align: left;
-    border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 34px;
-    margin: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
-    margin-left: 40px;
-    border: none;
-    margin-bottom: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
-    margin: 0;
-    margin-bottom: 44px;
-  }
-}
-
-.catalog-option__title::before {
-  content: "";
-  background-color: #68b738;
-  height: 2px;
-
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    position: absolute;
-    top: 20%;
-    left: -70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 70px;
-    left: -110px;
-  }
-}
-
-.catalog-option__title::after {
-  content: "";
-  background-color: #68b738;
-  height: 2px;
-
-  @media (min-width: $mobile-width) {
-    width: 34px;
-    position: absolute;
-    top: 15%;
-    right: -20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 357px;
-    right: -30px;
-    top: 20%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 914px;
-    right: -110px;
+    margin-bottom: 96px;
   }
 }
 
@@ -116,24 +37,6 @@
 
   @media (min-width: $desktop-width) {
     width: 165px;
-  }
-}
-
-.option-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $mobile-width) {
-    margin-bottom: 35px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 96px;
   }
 }
 
@@ -188,7 +91,7 @@
   opacity: 30%;
 }
 
-.add-card {
+.option-list__add {
   font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -239,13 +142,6 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
-  }
-}
-
-.option__all {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
   }
 }
 

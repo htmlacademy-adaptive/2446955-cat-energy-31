@@ -5,20 +5,28 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
-@import "./blocks/page__body.scss";
+@import "./blocks/page.scss";
 @import "./blocks/button.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/nav-list.scss";
+@import "./blocks/main-header.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/program-button.scss";
 @import "./blocks/options.scss";
 @import "./blocks/explanation.scss";
 @import "./blocks/stats.scss";
 @import "./blocks/location.scss";
-@import "./blocks/catalog_product-cards.scss";
+@import "./blocks/catalog-container.scss";
+@import "./blocks/card-list.scss";
 @import "./blocks/item-card.scss";
 @import "./blocks/index-card.scss";
 @import "./blocks/show-more.scss";
-@import "./blocks/catalog-options.scss";
+@import "./blocks/catalog-option.scss";
+@import "./blocks/option.scss";
+@import "./blocks/option-list.scss";
 @import "./blocks/present.scss";
 @import "./blocks/subscribe.scss";
+@import "./blocks/social-link.scss";
+@import "./blocks/copyright.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/visually-hidden.scss"

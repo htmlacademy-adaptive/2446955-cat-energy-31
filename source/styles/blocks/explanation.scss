@@ -1,3 +1,30 @@
+.explanation {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    padding: 0 20px;
+    margin-bottom: 29px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px 11px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    border: none;
+  }
+}
+
 .explanation__part {
   @media (min-width: $mobile-width) {
     display: flex;
@@ -27,7 +54,7 @@
 
   @media (min-width: $mobile-width) {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $tablet-width) {
@@ -95,7 +122,7 @@
   }
 }
 
-.leaf::after {
+.explanation__leaf::after {
   @media (min-width: $tablet-width) {
     content: "1";
     color: #f2f2f2;
@@ -110,7 +137,7 @@
   }
 }
 
-.leaf::before {
+.explanation__leaf::before {
   @media (min-width: $mobile-width) {
     background-image: url("../../icons/stack.svg#leaf-mobile");
   }
@@ -120,7 +147,7 @@
   }
 }
 
-.leaf {
+.explanation__leaf {
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-right: 153px;
@@ -132,7 +159,7 @@
   }
 }
 
-.powder::after {
+.explanation__powder::after {
   @media (min-width: $tablet-width) {
     content: "2";
     color: #f2f2f2;
@@ -147,7 +174,7 @@
   }
 }
 
-.powder::before {
+.explanation__powder::before {
   @media (min-width: $mobile-width) {
     background-image: url("../../icons/stack.svg#powder-mobile");
   }
@@ -157,7 +184,7 @@
   }
 }
 
-.powder {
+.explanation__powder {
   @media (min-width: $tablet-width) {
     width: 246px;
   }
@@ -168,7 +195,7 @@
   }
 }
 
-.fork::after {
+.explanation__fork::after {
   @media (min-width: $tablet-width) {
     content: "3";
     width: 136px;
@@ -183,7 +210,7 @@
   }
 }
 
-.fork::before {
+.explanation__fork::before {
   @media (min-width: $mobile-width) {
     background-image: url("../../icons/stack.svg#fork-mobile");
   }
@@ -193,7 +220,7 @@
   }
 }
 
-.fork {
+.explanation__fork {
   @media (min-width: $tablet-width) {
     width: 247px;
     margin-right: 137px;
@@ -206,7 +233,7 @@
   }
 }
 
-.clock::after {
+.explanation__clock::after {
   @media (min-width: $tablet-width) {
     content: "4";
     color: #f2f2f2;
@@ -221,7 +248,7 @@
   }
 }
 
-.clock::before {
+.explanation__clock::before {
   @media (min-width: $mobile-width) {
     background-image: url("../../icons/stack.svg#clock-mobile");
   }
@@ -231,37 +258,12 @@
   }
 }
 
-.clock {
+.explanation__clock {
   @media (min-width: $tablet-width) {
     width: 249px;
   }
 
   @media (min-width: $desktop-width) {
     width: 246px;
-  }
-}
-
-.explanation {
-  @media (min-width: $mobile-width) {
-    width: 280px;
-    padding: 0 20px;
-    margin-bottom: 29px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px 11px;
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0 110px;
-    box-sizing: border-box;
-    margin-bottom: 69px;
-    border: none;
   }
 }

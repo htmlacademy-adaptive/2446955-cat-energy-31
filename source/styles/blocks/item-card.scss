@@ -125,26 +125,3 @@
     justify-content: space-between;
   }
 }
-
-.index-card {
-  @media (min-width: $tablet-width) {
-    border-bottom: 1px solid #d9d9d9;
-    margin: 0;
-    font-size: 16px;
-    line-height: 20px;
-    padding-bottom: 2px;
-  }
-}
-
-.index-card:nth-child(3) {
-  @media (min-width: $desktop-width) {
-    padding-bottom: 9px;
-  }
-}
-
-.index-card:nth-child(1),
-.index-card:nth-child(2) {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
-  }
-}
