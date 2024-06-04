@@ -51,18 +51,21 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
-    padding: 26px 39px 25px;
+    padding: 24px 39px 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 896px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 16px 0;
     border: none;
-    border-bottom: 1px solid #cdcdcd;
     border-top: 1px solid #cdcdcd;
   }
+}
+
+.option-list__item:nth-last-child(1) {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .option-list__button {
@@ -116,17 +119,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 21px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 652px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     align-items: center;
     margin-right: 42px;
+    width: 652px;
   }
 }
 
