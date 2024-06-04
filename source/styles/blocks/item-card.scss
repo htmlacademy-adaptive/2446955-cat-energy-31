@@ -1,0 +1,139 @@
+.item-card {
+  box-sizing: border-box;
+
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    min-height: 209px;
+    padding: 20px 20px 25px;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: minmax(54px, auto), minmax(54px, auto), minmax(54px auto);
+    border: 1px solid #ebebeb;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 324px;
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#ffffff 98px, #f2f2f2 98px);
+    padding: 29px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.item-card__image {
+  @media (min-width: $mobile-width) {
+    grid-row: span 2;
+    place-self: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.item-card__image img {
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.item-card__button {
+  @media (min-width: $mobile-width) {
+    grid-column: span 2;
+    width: 100%;
+    height: 38px;
+    align-self: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: end;
+  }
+}
+
+.item-card__description {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 33px;
+  }
+}
+
+.item-card__name {
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+
+  @media (min-width: $mobile-width) {
+    text-transform: uppercase;
+    text-align: left;
+    width: 135px;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.item-card__index {
+  @media (min-width: $mobile-width) {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.index-card {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 2px;
+  }
+}
+
+.index-card:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
+}
+
+.index-card:nth-child(1),
+.index-card:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+}
