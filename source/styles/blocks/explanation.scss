@@ -1,3 +1,29 @@
+.explanation {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    padding: 0 20px;
+    margin-bottom: 29px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px 11px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    border: none;
+  }
+}
+
 .explanation__part {
   @media (min-width: $mobile-width) {
     display: flex;
@@ -27,7 +53,7 @@
 
   @media (min-width: $mobile-width) {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $tablet-width) {
@@ -80,11 +106,11 @@
 
 .explanation__description::before {
   content: "";
-  width: 60px;
-  height: 60px;
   position: absolute;
   left: -80px;
   top: -2px;
+  width: 60px;
+  height: 60px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -95,7 +121,7 @@
   }
 }
 
-.leaf::after {
+.explanation__leaf::after {
   @media (min-width: $tablet-width) {
     content: "1";
     color: #f2f2f2;
@@ -110,11 +136,17 @@
   }
 }
 
-.leaf::before {
-  background-image: url("../../icons/stack.svg#leaf");
+.explanation__leaf::before {
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#leaf-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#leaf-tablet");
+  }
 }
 
-.leaf {
+.explanation__leaf {
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-right: 153px;
@@ -126,7 +158,7 @@
   }
 }
 
-.powder::after {
+.explanation__powder::after {
   @media (min-width: $tablet-width) {
     content: "2";
     color: #f2f2f2;
@@ -141,11 +173,17 @@
   }
 }
 
-.powder::before {
-  background-image: url("../../icons/stack.svg#powder");
+.explanation__powder::before {
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#powder-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#powder-tablet");
+  }
 }
 
-.powder {
+.explanation__powder {
   @media (min-width: $tablet-width) {
     width: 246px;
   }
@@ -156,7 +194,7 @@
   }
 }
 
-.fork::after {
+.explanation__fork::after {
   @media (min-width: $tablet-width) {
     content: "3";
     width: 136px;
@@ -171,11 +209,17 @@
   }
 }
 
-.fork::before {
-  background-image: url("../../icons/stack.svg#fork");
+.explanation__fork::before {
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#fork-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#fork-tablet");
+  }
 }
 
-.fork {
+.explanation__fork {
   @media (min-width: $tablet-width) {
     width: 247px;
     margin-right: 137px;
@@ -188,7 +232,7 @@
   }
 }
 
-.clock::after {
+.explanation__clock::after {
   @media (min-width: $tablet-width) {
     content: "4";
     color: #f2f2f2;
@@ -203,41 +247,22 @@
   }
 }
 
-.clock::before {
-  background-image: url("../../icons/stack.svg#clock");
+.explanation__clock::before {
+  @media (min-width: $mobile-width) {
+    background-image: url("../../icons/stack.svg#clock-mobile");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#clock-tablet");
+  }
 }
 
-.clock {
+.explanation__clock {
   @media (min-width: $tablet-width) {
     width: 249px;
   }
 
   @media (min-width: $desktop-width) {
     width: 246px;
-  }
-}
-
-.explanation {
-  @media (min-width: $mobile-width) {
-    width: 280px;
-    padding: 0 20px;
-    margin-bottom: 29px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px 11px;
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0 110px;
-    box-sizing: border-box;
-    margin-bottom: 69px;
-    border: none;
   }
 }
