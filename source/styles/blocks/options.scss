@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +20,8 @@
     flex-wrap: wrap;
     gap: 80px;
     padding: 0 110px;
+    width: 1440px;
+    margin: 0 auto;
     margin-bottom: 25px;
   }
 }
@@ -40,14 +43,15 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     min-height: 372px;
-    padding: 77px 63px 53px 52px;
-    margin-bottom: 45px;
+    padding: 76px 63px 53px 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     min-height: 374px;
     padding: 78px 61px 55px 52px;
+    margin-bottom: 45px;
   }
 }
 
@@ -63,7 +67,7 @@
   margin: 0;
 
   @media (min-width: $mobile-width) {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     width: 137px;
     left: 70px;
   }
@@ -118,8 +122,11 @@
 
 .options__title-gain {
   @media (min-width: $mobile-width) {
-    top: -1px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,8 +147,8 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    left: 363px;
-    top: 16px;
+    left: 362px;
+    top: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -205,6 +212,10 @@
   }
 }
 
+.options__link:active {
+  opacity: 30%;
+}
+
 .options__link::after {
   content: "";
   background-image: url("../../icons/stack.svg#icon_arrow");
@@ -219,15 +230,5 @@
 
   @media (min-width: $tablet-width) {
     left: calc(100% + 25px);
-  }
-}
-
-.gain {
-  @media (min-width: $mobile-width) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
   }
 }

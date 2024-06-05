@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 24px;
+    margin-top: 25px;
     padding: 0 30px;
   }
 
@@ -27,9 +27,9 @@
   box-sizing: border-box;
 
   @media (min-width: $mobile-width) {
-    width: 100%;
+    width: 320px;
+    margin: 0 auto;
     min-height: 480px;
-    align-items: center;
     padding-bottom: 19px;
   }
 
@@ -38,12 +38,14 @@
     color: #000000;
     width: 768px;
     padding: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 580px;
     color: #000000;
-    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
     margin-bottom: 43px;
   }
 }
@@ -52,11 +54,12 @@
   display: block;
 }
 
-.hero-image {
+.hero__picture {
   @media (min-width: $mobile-width) {
     width: 280px;
     min-height: 270px;
     display: block;
+    margin-bottom: 2px;
   }
 
   @media (min-width: $tablet-width) {
@@ -80,10 +83,11 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: absolute;
     z-index: -1;
     height: 302px;
-    width: 100%;
+    width: 320px;
   }
 
   @media (min-width: $tablet-width) {
@@ -99,9 +103,9 @@
     position: absolute;
     z-index: -1;
     height: 694px;
-    width: 50%;
+    width: 720px;
     top: 0;
-    right: 0;
+    left: 50%;
   }
 }
 
@@ -163,8 +167,8 @@
 
   @media (min-width: $mobile-width) {
     text-align: center;
-    margin-bottom: 25px;
-    margin-top: 28px;
+    margin-bottom: 27px;
+    margin-top: 26px;
   }
 
   @media (min-width: $tablet-width) {

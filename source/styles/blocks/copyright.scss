@@ -1,0 +1,47 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+  }
+}
+
+.copyright__link {
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.copyright__link:active {
+  opacity: 30%;
+}
+
+.copyright__link-html {
+  mask-image: url("../../icons/stack.svg#html-logo");
+  width: 27px;
+  height: 34px;
+  display: block;
+  background-color: #666666;
+}
+
+.copyright__link-html:hover {
+  background-color: #68b738;
+}
+
+.copyright__link-html:focus {
+  background-color: #68b738;
+}
+
+.copyright__link-html:active {
+  opacity: 30%;
+  background-color: #68b738;
+}

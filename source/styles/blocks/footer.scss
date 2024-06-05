@@ -1,25 +1,30 @@
 .footer {
-  position: absolute;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  min-width: 100%;
 
   @media (min-width: $mobile-width) {
     padding: 40px 20px;
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 55px 30px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
-.footer-logo {
+.footer__logo {
   @media (min-width: $mobile-width) {
     display: block;
     width: 128px;
@@ -38,7 +43,7 @@
   }
 }
 
-.footer-logo::after {
+.footer__logo::after {
   @media (min-width: $mobile-width) {
     content: "";
     background-color: #d9d9d9;
@@ -47,7 +52,7 @@
     margin: 15px;
     display: block;
     position: absolute;
-    left: 0;
+    left: 5px;
   }
 
   @media (min-width: $tablet-width) {
@@ -55,25 +60,7 @@
   }
 }
 
-.footer__social::after {
-  @media (min-width: $mobile-width) {
-    content: "";
-    background-color: #d9d9d9;
-    width: 280px;
-    height: 1px;
-    margin: 20px;
-    display: block;
-    position: absolute;
-    top: 125px;
-    left: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.social-list {
+.footer__social {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -97,57 +84,10 @@
   }
 }
 
-.social-link::before {
-  content: "";
-  width: 28px;
-  height: 22px;
-  display: block;
-  position: static;
+.footer__logo-cat:hover {
+  opacity: 90%;
 }
 
-.vkontakte-link::before {
-  background-image: url("../../icons/stack.svg#vkontakte");
-  left: 94px;
-}
-
-.youtube-link::before {
-  background-image: url("../../icons/stack.svg#youtube");
-  left: 146px;
-}
-
-.telegram-link::before {
-  background-image: url("../../icons/stack.svg#telegram");
-  left: 198px;
-}
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 162px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 3px;
-  }
-}
-
-.copyright__link {
-  font-family: "lato", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-decoration: none;
-  color: $base-color-text;
-}
-
-.copyright__link-html::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#html-logo");
-  width: 27px;
-  height: 34px;
-  display: block;
-  position: static;
+.footer__logo-cat:active {
+  opacity: 50%;
 }
