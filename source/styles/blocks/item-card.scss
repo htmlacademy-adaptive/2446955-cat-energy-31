@@ -79,7 +79,7 @@
 
 .item-card__description {
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +100,7 @@
   @media (min-width: $mobile-width) {
     text-transform: uppercase;
     text-align: left;
-    width: 135px;
+    width: 99px;
     margin: 0;
     margin-top: 2px;
     margin-bottom: 5px;
@@ -108,9 +108,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 19px;
     font-size: 20px;
     line-height: 24px;
+    width: 130px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,28 +124,5 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.index-card {
-  @media (min-width: $tablet-width) {
-    border-bottom: 1px solid #d9d9d9;
-    margin: 0;
-    font-size: 16px;
-    line-height: 20px;
-    padding-bottom: 2px;
-  }
-}
-
-.index-card:nth-child(3) {
-  @media (min-width: $desktop-width) {
-    padding-bottom: 9px;
-  }
-}
-
-.index-card:nth-child(1),
-.index-card:nth-child(2) {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
   }
 }

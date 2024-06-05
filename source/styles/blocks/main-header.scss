@@ -1,0 +1,22 @@
+.main-header .current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.main-header {
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

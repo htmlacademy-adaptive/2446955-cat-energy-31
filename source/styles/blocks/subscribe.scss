@@ -40,7 +40,7 @@
     font-size: 32px;
     line-height: 32px;
     margin-left: 40px;
-    margin-bottom: 68px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +65,7 @@
 
   @media (min-width: $desktop-width) {
     width: 70px;
-    top: 18px;
+    top: 14px;
   }
 }
 
@@ -88,7 +88,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1053px;
-    top: 18px;
+    top: 14px;
     right: -15px;
   }
 }
@@ -120,7 +120,7 @@
   }
 }
 
-.subscribe-form {
+.subscribe__form {
   font-family: "oswald", sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -141,7 +141,7 @@
   }
 }
 
-.subscribe-input {
+.subscribe__input {
   cursor: pointer;
 
   @media (min-width: $mobile-width) {
@@ -163,11 +163,11 @@
   }
 }
 
-.subscribe-input:hover {
+.subscribe__input:hover {
   border-color: #cdcdcd;
 }
 
-.subscribe-input:active {
+.subscribe__input:active {
   border-color: #444444;
 }
 

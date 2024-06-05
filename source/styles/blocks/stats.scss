@@ -1,22 +1,28 @@
 .stats {
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: $mobile-width) {
     background-color: #eaeaea;
     padding: 25px 20px 40px;
+    width: 320px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    background-image: linear-gradient(#ffffff 577px, #eaeaea 577px);
+    background-image: linear-gradient(#ffffff 573px, #eaeaea 573px);
     padding: 0 30px 100px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
     padding: 0 110px 66px;
-    margin: 0;
     position: relative;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -52,7 +58,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 61px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +134,7 @@
     display: flex;
     flex-direction: column;
     justify-content: right;
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -172,7 +178,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     border: 1px solid #e6e6e6;
-    padding: 15px 29px;
+    padding: 17px 29px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 2%;
@@ -228,7 +234,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 73px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -237,7 +243,7 @@
   }
 }
 
-.cost {
+.stats__cost {
   margin: 0;
   text-transform: uppercase;
   font-size: 14px;
@@ -260,7 +266,7 @@
   }
 }
 
-.price {
+.stats__price {
   margin: 0;
   text-transform: uppercase;
   font-size: 14px;
@@ -304,23 +310,23 @@
   position: relative;
 }
 
-.fat-cat {
+.stats__fat-cat {
   object-position: left;
 }
 
-.slim-cat {
+.stats__slim-cat {
   position: absolute;
   right: 0;
 }
 
-.description-weight {
+.stats__description-weight {
   @media (min-width: $tablet-width) {
     width: 96px;
     right: 28px;
   }
 }
 
-.compare-button {
+.stats__button {
   background-color: #666666;
   border: none;
   position: absolute;
@@ -335,7 +341,7 @@
 
   @media (min-width: $tablet-width) {
     height: 512px;
-    left: 50%;
+    left: -280px;
   }
 
   @media (min-width: $desktop-width) {
@@ -344,12 +350,12 @@
   }
 }
 
-.compare-button:hover {
+.stats__button:hover {
   background-color: #68b738;
   color: #68b738;
 }
 
-.compare-button::after {
+.stats__button::after {
   content: "";
   background-image: url("../../icons/stack.svg#thumb");
 
