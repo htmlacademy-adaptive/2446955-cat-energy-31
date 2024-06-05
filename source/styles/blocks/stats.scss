@@ -293,6 +293,7 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -341,7 +342,7 @@
 
   @media (min-width: $tablet-width) {
     height: 512px;
-    left: -280px;
+    left: 278px;
   }
 
   @media (min-width: $desktop-width) {
