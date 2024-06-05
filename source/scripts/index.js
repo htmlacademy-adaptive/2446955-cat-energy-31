@@ -1,5 +1,5 @@
 /* в этот файл добавляет скрипты*/
-const navMain = document.querySelector('.header__nav');
+const navMain = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');

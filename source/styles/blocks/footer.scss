@@ -4,12 +4,17 @@
 
   @media (min-width: $mobile-width) {
     padding: 40px 20px;
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 55px 30px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +52,7 @@
     margin: 15px;
     display: block;
     position: absolute;
-    left: 0;
+    left: 5px;
   }
 
   @media (min-width: $tablet-width) {
