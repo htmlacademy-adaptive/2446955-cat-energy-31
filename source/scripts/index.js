@@ -1,10 +1,10 @@
 /* в этот файл добавляет скрипты*/
-const navMain = document.querySelector('.header__nav');
+const navMain = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', () => {
+navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('nav--closed')) {
     navMain.classList.remove('nav--closed');
     navMain.classList.add('nav--opened');

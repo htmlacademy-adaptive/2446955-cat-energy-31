@@ -27,3 +27,16 @@
   background-color: #666666;
   mask-repeat: no-repeat;
 }
+
+.social-list::after {
+  @media (min-width: $mobile-width) {
+    content: "";
+    background-color: #d9d9d9;
+    width: 280px;
+    height: 1px;
+    margin-top: 65px;
+    display: block;
+    position: absolute;
+    left: 16px;
+  }
+}
