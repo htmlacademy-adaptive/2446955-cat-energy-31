@@ -37,8 +37,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    display: grid;
     min-height: 280px;
+    grid-template-columns: 230px 245px 245px 250px;
+    gap: 84px;
   }
 }
 
@@ -73,7 +75,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: $base-color-text;
+  color: #222222;
   position: relative;
 
   @media (min-width: $mobile-width) {
@@ -154,7 +156,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-right: 94px;
   }
 }
 
@@ -190,7 +191,7 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin-right: 79px;
+    margin: 0;
   }
 }
 
@@ -228,7 +229,6 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     margin: 0;
-    margin-right: 81px;
   }
 }
 
@@ -264,5 +264,6 @@
 
   @media (min-width: $desktop-width) {
     width: 246px;
+    margin: 0;
   }
 }

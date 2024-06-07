@@ -1,6 +1,17 @@
 .option__all {
+  margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
   }
 }

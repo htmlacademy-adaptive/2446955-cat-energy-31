@@ -4,15 +4,22 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 44px 60px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 47px 80px;
+    width: 1220px;
   }
 }
