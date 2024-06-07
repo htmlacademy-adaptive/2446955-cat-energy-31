@@ -22,9 +22,9 @@ navToggle.addEventListener('click', () => {
 const mapPicture = document.querySelector('.map-picture');
 const locationImage = document.querySelector('.location__image');
 
-if (mapPicture.classList.contains ('location--opened')) {
-  mapPicture.classList.remove ('location--opened');
-  mapPicture.classList.add ('location--closed');
-  locationImage.classList.remove ('location--closed');
-  locationImage.classList.add ('location--opened');
-};
+if (mapPicture.classList.contains ('map-picture--opened')) {
+  mapPicture.classList.remove ('map-picture--opened');
+  mapPicture.classList.add ('map-picture--closed');
+  locationImage.classList.remove ('location__image--closed');
+  locationImage.classList.add ('location__image--opened');
+}
