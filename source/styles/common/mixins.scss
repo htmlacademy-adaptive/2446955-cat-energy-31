@@ -4,6 +4,6 @@
     font-weight: $font-weight;
     font-style: $font-style;
     src: $font-src;
-    font-display: swap;
+    font-display: fallback;
   }
 }
