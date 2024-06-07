@@ -126,3 +126,12 @@
     justify-content: space-between;
   }
 }
+
+.item-card__link-image {
+  cursor: pointer;
+}
+
+.item-card__link-name {
+  cursor: pointer;
+  text-decoration: none;
+}

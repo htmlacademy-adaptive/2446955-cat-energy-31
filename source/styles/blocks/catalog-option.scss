@@ -1,22 +1,5 @@
 .catalog-option {
   box-sizing: border-box;
-
-  @media (min-width: $mobile-width) {
-    width: 320px;
-    padding: 0 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0 110px;
-  }
 }
 
 .catalog-option__title {
@@ -27,20 +10,23 @@
   text-align: center;
   color: #000000;
   position: relative;
+  display: flex;
 
   @media (min-width: $mobile-width) {
     text-align: left;
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 34px;
     margin: 0;
+    margin-left: 20px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-left: 40px;
     border: none;
+    margin: 0;
     margin-bottom: 42px;
+    gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +34,7 @@
     line-height: 40px;
     margin: 0;
     margin-bottom: 44px;
+    gap: 40px;
   }
 }
 
@@ -55,17 +42,18 @@
   content: "";
   background-color: #68b738;
   height: 2px;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    width: 30px;
-    position: absolute;
-    top: 20%;
-    left: -70px;
+    flex-shrink: 0;
+    width: calc(50% - 600px / 2 - 54px);
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70px;
-    left: -110px;
+    flex-shrink: 0;
+    width: calc(50% - 600px / 2 - 350px);
+    margin-top: 20px;
   }
 }
 
@@ -75,21 +63,25 @@
   height: 2px;
 
   @media (min-width: $mobile-width) {
-    width: 34px;
+    min-width: calc(50% - 600px / 2 - 20px);
+    flex-grow: 1;
+    display: block;
+    width: 35px;
     position: absolute;
-    top: 15%;
-    right: -20px;
+    right: 0;
+    top: 8px;
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 357px;
-    right: -30px;
-    top: 20%;
+    min-width: calc(50% - 600px / 2 - 30px);
+    flex-grow: 1;
+    position: static;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 914px;
-    right: -110px;
+    min-width: calc(50% - 600px / 2 - 110px);
+    flex-grow: 1;
+    margin-top: 20px;
   }
 }

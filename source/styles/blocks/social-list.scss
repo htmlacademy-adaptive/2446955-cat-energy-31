@@ -39,4 +39,8 @@
     position: absolute;
     left: 16px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

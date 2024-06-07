@@ -21,8 +21,7 @@
     background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
     padding: 0 110px 66px;
     position: relative;
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -71,7 +70,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: $base-color-text;
+  color: #222222;
 
   @media (min-width: $mobile-width) {
     margin-bottom: 19px;
@@ -297,10 +296,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    right: 106px;
     width: 580px;
+    margin: 0;
   }
 }
 
@@ -370,5 +367,14 @@
 
   @media (min-width: $tablet-width) {
     top: 46%;
+  }
+}
+
+.stats__block {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }

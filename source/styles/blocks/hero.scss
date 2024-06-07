@@ -103,9 +103,9 @@
     position: absolute;
     z-index: -1;
     height: 694px;
-    width: 720px;
+    width: 50%;
     top: 0;
-    left: 50%;
+    right: 0;
   }
 }
 
@@ -132,6 +132,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 190px;
+    margin-bottom: 30px;
   }
 }
 
@@ -152,8 +153,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 190px;
-    top: 303px;
+    position: initial;
+    margin-left: 190px;
   }
 }
 
