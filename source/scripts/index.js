@@ -10,7 +10,7 @@ if (navMain.classList.contains ('nav--opened')) {
 }
 
 navToggle.addEventListener('click', () => {
-  if (navMain.classList.contains('nav-closed')) {
+  if (navMain.classList.contains('nav--closed')) {
     navMain.classList.remove('nav--closed');
     navMain.classList.add('nav--opened');
   } else {
@@ -18,3 +18,13 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('nav--opened');
   }
 });
+
+const mapPicture = document.querySelector('.map-picture');
+const locationImage = document.querySelector('.location__image');
+
+if (mapPicture.classList.contains ('location--opened')) {
+  mapPicture.classList.remove ('location--opened');
+  mapPicture.classList.add ('location--closed');
+  locationImage.classList.remove ('location--closed');
+  locationImage.classList.add ('location--opened');
+};

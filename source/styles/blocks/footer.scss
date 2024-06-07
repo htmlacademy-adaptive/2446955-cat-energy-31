@@ -89,10 +89,10 @@
 }
 
 .footer__block {
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+  display: flex;
+  justify-content: space-between;
   }
 }

@@ -115,8 +115,8 @@
             <source type="image/webp" media="(min-width: 1440px)"
               srcset="images/cat-after-desktop@1x.webp, images/cat-after-desktop@2x.webp 2x" width="560" height="512">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/cat-after-tablet@1x.webp, images/cat-after-tablet@2x.webp 2x" width="560" height="512"><img
-              class="stats__image stats__slim-cat" src="images/cat-after-mobile@1x.webp"
+              srcset="images/cat-after-tablet@1x.webp, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
+            <img class="stats__image stats__slim-cat" src="images/cat-after-mobile@1x.webp"
               srcset="images/cat-after-mobile@2x.webp 2x" loading="lazy" alt="стройный кот" width="280" height="256">
           </picture><button class="stats__button button" type="button"><span
               class="visually-hidden">Слайдер</span></button>
@@ -131,16 +131,28 @@
           <p class="location__city">Санкт-Петербург</p>
         </address>
       </div>
-      <iframe class="location__image" title="Карта с расположением"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.320472477096974!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1717492652232!5m2!1sru!2sru"
-        width="600" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="location__map map">
+        <div class="map-picture location--opened">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="images/location-desktop@1x.webp, images/location-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/location-tablet@1x.webp, images/location-tablet@2x.webp 2x" width="768" height="400">
+            <img class="map__image" src="images/location@1x.webp" srcset="images/location@2x.webp 2x"
+              loading="lazy" alt="карта расположения" width="320" height="362">
+          </picture>
+        </div>
+        <iframe class="location__image location--closed" title="Карта с расположением"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.320472477096974!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1717492652232!5m2!1sru!2sru"
+          width="600" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </main>
   <footer class="footer" data-test="footer">
     <div class="footer__block">
-      <a class="footer__logo" href="index.html"><img class="footer__logo-cat" src="images/cat-energy.svg" width="128" height="24"
-          alt="надпись cat energy"><span class="visually-hidden">cat
+      <a class="footer__logo" href="index.html"><img class="footer__logo-cat" src="images/cat-energy.svg" width="128"
+          height="24" alt="надпись cat energy"><span class="visually-hidden">cat
           energy</span></a>
       <ul class="footer__social social-list">
         <li class="social-list__item-vkontakte"><a class="social-link social-list__vkontakte" href="#"><span
@@ -156,7 +168,6 @@
             HTML Academy</span></a></div>
     </div>
   </footer>
-  <script src="index.js"></script>
 </body>
 
 </html>
