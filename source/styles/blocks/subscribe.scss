@@ -3,22 +3,14 @@
   position: relative;
 
   @media (min-width: $mobile-width) {
-    width: 320px;
-    padding: 0 20px;
     margin-bottom: 40px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0 30px;
     margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0 110px;
     margin-bottom: 104px;
   }
 }
@@ -30,17 +22,20 @@
   font-weight: 400;
   color: #000000;
   margin: 0;
+  display: flex;
 
   @media (min-width: $mobile-width) {
     text-align: left;
     margin-bottom: 31px;
+    margin-left: 20px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-left: 40px;
+    margin: 0;
     margin-bottom: 66px;
+    gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,17 +50,18 @@
   content: "";
   background-color: #68b738;
   height: 2px;
-  position: absolute;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    width: 30px;
-    left: 0;
-    top: 15px;
+    flex-shrink: 0;
+    width: calc(50% - 600px / 2 - 54px);
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70px;
-    top: 14px;
+    flex-shrink: 0;
+    width: calc(50% - 600px / 2 - 350px);
+    margin-top: 20px;
   }
 }
 
@@ -73,23 +69,28 @@
   content: "";
   background-color: #68b738;
   height: 2px;
-  position: absolute;
 
   @media (min-width: $mobile-width) {
+    min-width: calc(50% - 600px / 2 - 20px);
+    flex-grow: 1;
+    display: block;
     width: 108px;
-    top: 9px;
+    position: absolute;
     right: 0;
+    top: 8px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 456px;
-    top: 15px;
+    min-width: calc(50% - 600px / 2 - 30px);
+    flex-grow: 1;
+    position: static;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1053px;
-    top: 14px;
-    right: -15px;
+    min-width: calc(50% - 600px / 2 - 110px);
+    flex-grow: 1;
+    margin-top: 20px;
   }
 }
 
@@ -192,4 +193,19 @@
 .subscribe__button:active {
   background-color: #5eaa2f;
   opacity: 30%;
+}
+
+.subscribe__block {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

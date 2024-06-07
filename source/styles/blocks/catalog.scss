@@ -1,0 +1,12 @@
+.catalog-location {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $mobile-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
+}

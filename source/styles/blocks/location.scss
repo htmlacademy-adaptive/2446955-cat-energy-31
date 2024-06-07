@@ -72,7 +72,7 @@
   }
 }
 
-.catalog-location .location__gteeting {
+.location__catalog .location__gteeting {
   @media (min-width: $tablet-width) {
     padding: 61px 30px;
   }
@@ -101,19 +101,6 @@
   }
 }
 
-.location__catalog {
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $mobile-width) {
-    background-color: #f2f2f2;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-color: #f2f2f2;
-  }
-}
-
 .location__image {
   display: block;
   width: 100%;
@@ -125,4 +112,8 @@
   @media (min-width: $desktop-width) {
     min-height: 398px;
   }
+}
+
+.location__image--closed {
+  display: none;
 }
