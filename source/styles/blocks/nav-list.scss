@@ -39,6 +39,24 @@
   }
 }
 
+.nav-list--flow {
+  @media (min-width: $mobile-width) {
+    display: block;
+    position: static;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 437px;
+    gap: 33px;
+    align-items: center;
+    margin-top: -11px;
+    background-color: transparent;
+  }
+}
+
 .nav-list a {
   @media (min-width: $mobile-width) {
     box-sizing: border-box;
