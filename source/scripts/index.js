@@ -1,8 +1,12 @@
 /* в этот файл добавляет скрипты*/
-const navMain = document.querySelector('.main-header__nav');
+const navMain = document.querySelector('.header__nav');
 const navToggle = document.querySelector('.nav__toggle');
+const navList = document.querySelector('.nav-list');
+const navTog = document.querySelector('.nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
+navTog.classList.remove('nav__toggle--hidden');
+navList.classList.remove('nav-list--flow');
 
 if (navMain.classList.contains ('nav--opened')) {
   navMain.classList.remove('nav--opened');

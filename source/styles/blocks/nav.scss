@@ -18,7 +18,13 @@
   color: #111111;
 }
 
-.nav__link {
+.catalog-header .nav__link {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-header .nav__link {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -61,6 +67,7 @@
     transform: rotate(-45deg);
   }
 }
+
 
 @media (min-width: $mobile-width) {
   .nav--closed .nav-list__item {
@@ -140,6 +147,10 @@
   top: 23px;
   right: 22px;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.nav__toggle--hidden {
+  display: none;
 }
 
 .nav__head {
